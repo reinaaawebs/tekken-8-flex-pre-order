@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: black;
+      }
+
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+    }
+
+      .plan-features {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      
+      }
+
+      .plan-features li {
+        margin-bottom: 20px; 
+      }
+
+      .pricing-plan {
+        flex: 1;
+        max-width: 400px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+
+      }
+
+      .plan-button {
+        padding: 10px;
+        background-color: #ff6600;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+      
+    }
+
+      .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+      }
+
+      .plan-price {
+        font-weight: bold;
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+
+
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        
+        }
+
+        .pricing-plan {
+          width: 400px;
+        }
+
+        
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Tekken 8 Standard Edition</div>
+        <div class="plan-price">$69.99</div>
+        <ul class="plan-features">
+          <li>✅ Tekken 8 Base Game</li>
+          <li>✅ 32 Golden Suit Costume</li>
+          <li> Note: This item is limited time only </li>
+        </ul>
+        <button class="plan-button">Pre Order Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Tekken 8 Deluxe Edition</div>
+        <div class="plan-price">$89.99</div>
+        <ul class="plan-features">
+          <li>✅ Standard Edition</li>
+          <li>✅ 1 Year Character Pass</li>
+          <li>✅ Exclusive Paul Phoenix avatar</li>
+        </ul>
+        <button class="plan-button">Pre Order Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Tekken 8 Ultimate Edition</div>
+        <div class="plan-price">$109.99</div>
+        <ul class="plan-features">
+          <li>✅ Deluxe Edition</li>
+          <li>✅ 2 Brand New Stages</li>
+          <li>✅ Exclusive Jin, Jun and Kazuya avatar</li>
+        </ul>
+        <button class="plan-button">Pre Order Now</button>
+      </div>
+    </div>
+  </body>
+</html>
